@@ -1,0 +1,5 @@
+---
+# set to false if you don't use firewalld or do not want the playbook to modify it
+osbs_manage_firewalld: true
+
+osbs_node_config_dir: openshift-node-configs
