@@ -2,4 +2,7 @@
 # set to false if you don't use firewalld or do not want the playbook to modify it
 osbs_manage_firewalld: true
 
+# openshift node log verbosity (0-5)
+osbs_node_log_level: 3
+
 osbs_node_config_dir: openshift-node-configs

@@ -26,6 +26,10 @@ following location. The archive has to be named `node-$NODEFQDN.tar.xz`.
 
     osbs_node_config_dir: openshift-node-configs
 
+OpenShift node log level (0-5).
+
+    osbs_node_log_level: 3
+
 Dependencies
 ------------
 
