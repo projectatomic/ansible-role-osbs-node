@@ -30,6 +30,10 @@ OpenShift node log level (0-5).
 
     osbs_node_log_level: 3
 
+OpenShift deployment type (set to `atomic-openshift` if using OpenShift Enterprise).
+
+    osbs_deployment_type: origin
+
 Dependencies
 ------------
 
