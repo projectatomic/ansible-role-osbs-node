@@ -34,6 +34,10 @@ OpenShift deployment type (set to `atomic-openshift` if using OpenShift Enterpri
 
     osbs_deployment_type: origin
 
+Don't reinstall the node, just cleanup non-k8s containers
+
+    cleanup_only: true
+
 Dependencies
 ------------
 

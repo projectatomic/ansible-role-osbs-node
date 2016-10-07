@@ -1,0 +1,13 @@
+# Standards: 1.5
+---
+- name: list all containers
+  command: "docker ps -a --filter status=exited --format '{{ '{{' }} .Names {{ '}}' }}'"
+  register: containers
+  changed_when: false
+
+- name: remove non-kubernetes containers
+  docker:
+    name: "{{ item }}"
+    state: absent
+  with_items: "{{ containers.stdout_lines }}"
+  when: item.find('k8s') == -1
