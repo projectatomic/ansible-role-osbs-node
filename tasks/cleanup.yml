@@ -6,7 +6,7 @@
   changed_when: false
 
 - name: remove non-kubernetes containers
-  docker:
+  docker_container:
     name: "{{ item }}"
     state: absent
   with_items: "{{ containers.stdout_lines }}"
