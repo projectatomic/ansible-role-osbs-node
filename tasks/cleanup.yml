@@ -9,5 +9,5 @@
   docker_container:
     name: "{{ item }}"
     state: absent
-  with_items: "{{ containers.stdout_lines }}"
+  with_items: "{{ containers.stdout_lines|default([]) }}"
   when: item.find('k8s') == -1
